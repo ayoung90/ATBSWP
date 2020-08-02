@@ -21,15 +21,15 @@ def main():
         try:
             guess = int(input())
             if guess < secretNumber:
-                print('Guess is too low!')
+                print('Guess is too low!'+ '\n')
             elif guess > secretNumber:
-                print('Guess is too high!')
+                print('Guess is too high!' + '\n')
             else:
                 break
         except ValueError:
-            print('ERROR: Input was not a valid number')
+            print('ERROR: Input was not a valid number'+ '\n')
         except:
-            print('ERROR: Some other error occurred..')
+            print('ERROR: Some other error occurred..'+ '\n')
 
     if guess == secretNumber:
         print('Good job, you guessed the number in ' +
